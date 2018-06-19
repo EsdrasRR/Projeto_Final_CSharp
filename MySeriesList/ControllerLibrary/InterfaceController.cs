@@ -12,5 +12,6 @@ namespace ControllerLibrary
         Serie BuscarPorID(int id);
         void Editar(int id, Serie serieAtualizada);
 
+
     }
 }

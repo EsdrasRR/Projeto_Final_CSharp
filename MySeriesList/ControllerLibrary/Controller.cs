@@ -1,6 +1,6 @@
 ﻿using ModelLibrary;
 using System.Collections.Generic;
-
+using System;
 
 namespace ControllerLibrary
 {
@@ -55,5 +55,9 @@ namespace ControllerLibrary
             }
         }
 
+        List<Serie> InterfaceController.ListaSeries()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
