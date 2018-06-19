@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace ControllerLibrary
 {
-    public class Controller
+    public class Controller : InterfaceController
     {
         // Lista
         public List<Serie> ListaSeries { get; set; }
