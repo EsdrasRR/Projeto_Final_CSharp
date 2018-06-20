@@ -1,6 +1,8 @@
 ﻿using ModelLibrary;
 using System.Collections.Generic;
 using System;
+using System.Linq;
+
 
 namespace ControllerLibrary
 {
@@ -18,27 +20,33 @@ namespace ControllerLibrary
 
         public void Atualizar(Serie entity)
         {
-            throw new NotImplementedException();
+            contexto.Entry(entity).State = System.Data.Entity.EntityState.Modified;
+            contexto.SaveChanges();
         }
 
         public Serie BuscarPorID(int id)
         {
-            throw new NotImplementedException();
+            return contexto.Series.Find(id);
         }
 
         public void Excluir(int id)
         {
-            throw new NotImplementedException();
+            Serie s = BuscarPorID(id);
+            if (s != null)
+            {
+                contexto.Series.Remove(s);
+                contexto.SaveChanges();
+            }
         }
 
         public IList<Serie> ListarPorNome(string nome)
         {
-            throw new NotImplementedException();
+            return contexto.Series.Where(s => s.Nome == nome).ToList();
         }
 
         public IList<Serie> ListarTodos()
         {
-            throw new NotImplementedException();
+            return contexto.Series.ToList();
         }
     }
 }
