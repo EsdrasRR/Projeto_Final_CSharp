@@ -41,7 +41,7 @@ namespace ControllerLibrary
 
         public IList<Serie> ListarPorNome(string nome)
         {
-            return contexto.Series.Where(s => s.Nome == nome).ToList();
+            return contexto.Series.Where(s => s.Nome.ToLower() == nome.ToLower()).ToList();
         }
 
         public IList<Serie> ListarTodos()
