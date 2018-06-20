@@ -10,7 +10,7 @@ namespace ControllerLibrary
         {
             
         }
-        public ISet<Serie> Series { get; set; }
+        public DbSet<Serie> Series { get; set; }
 
     }
 
