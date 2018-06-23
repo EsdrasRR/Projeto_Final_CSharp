@@ -1,11 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ModelLibrary
 {
     public class Serie
     {
         [Key]
-        public int ID_Serie { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int ID_Serie;
         [Required, StringLength(30)]
         public string Nome { get; set; }
         [Required]
