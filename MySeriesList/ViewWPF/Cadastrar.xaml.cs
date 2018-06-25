@@ -56,6 +56,19 @@ namespace ViewWPF
 private void CheckBox_Checked(object sender, RoutedEventArgs e)
 {
 
-}*/
+}
+		private void btnSalvar_Click(object sender, RoutedEventArgs e)
+		{
+			MainWindow main = new MainWindow();
+			Cadastrar cadastrar = new Cadastrar();
+			main.Close();
+
+		}
+		private void btnVoltar_Click(object sender, RoutedEventArgs e)
+		{
+			MainWindow main = new MainWindow();
+			main.Show();
+			this.Close();
+		}
 	}
 }

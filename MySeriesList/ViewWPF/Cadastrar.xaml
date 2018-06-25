@@ -13,7 +13,8 @@
             <ColumnDefinition Width="835*"/>
         </Grid.ColumnDefinitions>
 
-        <Button x:Name="btnCadastrar" Content="Cadastrar&#xD;&#xA;" HorizontalAlignment="Left" Margin="381,403,0,0" VerticalAlignment="Top" Width="66" Click="btnSalvar_Click" RenderTransformOrigin="0.499,0.865" Height="22" Grid.Column="1"/>
+        <Button Content="Voltar&#xD;&#xA;" HorizontalAlignment="Left" Margin="382,380,0,0" VerticalAlignment="Top" Width="66" Click="btnVoltar_Click" RenderTransformOrigin="0.499,0.865" Height="22" Grid.Column="1"/>
+        <Button x:Name="btnCadastrar" Content="Cadastrar&#xD;&#xA;" HorizontalAlignment="Left" Margin="463,380,0,0" VerticalAlignment="Top" Width="66" Click="btnSalvar_Click" RenderTransformOrigin="0.499,0.865" Height="22" Grid.Column="1"/>
         <Label Content="Status&#xD;&#xA;" HorizontalAlignment="Left" Margin="72,104,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.143" FontSize="16" Height="30" Grid.Column="1"/>
         <Label Content="Nome&#xA;" HorizontalAlignment="Left" Margin="72,53,0,0" VerticalAlignment="Top" FontSize="16" Height="30" RenderTransformOrigin="0.547,0.567" Grid.Column="1"/>
         <Label Content="Tot_Ep&#xA;" HorizontalAlignment="Left" Margin="72,150,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.143" FontSize="16" Height="30" Grid.Column="1"/>
@@ -22,7 +23,7 @@
         <Label Content="Genero 2&#xA;" HorizontalAlignment="Left" Margin="71,301,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.143" FontSize="16" Height="34" Width="75" Grid.Column="1"/>
         <Label Content="Genero 3&#xA;" HorizontalAlignment="Left" Margin="71,347,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.143" FontSize="16" Height="34" Width="75" Grid.Column="1"/>
         <Label Content="Nota&#xA;" HorizontalAlignment="Left" Margin="73,391,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.143" FontSize="16" Height="34" Width="75" Grid.Column="1"/>
-        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="183,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged" Grid.Column="1"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="183,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
         <StackPanel Margin="-3,11,0,-11" Grid.ColumnSpan="2">
             <ComboBox x:Name="txtStatus" HorizontalAlignment="Left" Height="23" Margin="243,97,0,0" VerticalAlignment="Top" Width="120">
                 <ComboBoxItem Tag="01" Content="Assistindo"/>
@@ -32,7 +33,7 @@
                 <ComboBoxItem Tag="05" Content="Em espera"/>
             </ComboBox>
         </StackPanel>
-        <TextBox x:Name="txtTot_Ep" HorizontalAlignment="Left" Height="23" Margin="184,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged" Grid.Column="1"/>
+        <TextBox x:Name="txtTot_Ep" HorizontalAlignment="Left" Height="23" Margin="184,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
         <TextBox x:Name="txtEp_Atual" HorizontalAlignment="Left" Height="23" Margin="184,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1" />
         <TextBox x:Name="txtGenero1" HorizontalAlignment="Left" Height="23" Margin="184,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1" />
         <TextBox x:Name="txtGenero2" HorizontalAlignment="Left" Height="23" Margin="184,307,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1" />

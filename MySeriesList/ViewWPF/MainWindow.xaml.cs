@@ -8,9 +8,6 @@ using System.Text;
 
 namespace ViewWPF
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -18,13 +15,11 @@ namespace ViewWPF
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            MainWindow main = new MainWindow();
-            Cadastrar adicionar = new Cadastrar();
-            main.Close();
-            cadastro.Show();
-
-        }
-    }
+		private void Button_Click(object sender, RoutedEventArgs e)
+		{
+			Cadastrar cadastrar = new Cadastrar();
+			cadastrar.Show();
+			this.Close();
+		}
+	}
 }
