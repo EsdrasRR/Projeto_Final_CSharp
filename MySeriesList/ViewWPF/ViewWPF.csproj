@@ -68,6 +68,18 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Editar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Excluir.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Listar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -78,6 +90,15 @@
     </Compile>
     <Compile Include="Cadastrar.xaml.cs">
       <DependentUpon>Cadastrar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Editar.xaml.cs">
+      <DependentUpon>Editar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Excluir.xaml.cs">
+      <DependentUpon>Excluir.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Listar.xaml.cs">
+      <DependentUpon>Listar.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
