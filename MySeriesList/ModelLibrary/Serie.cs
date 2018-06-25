@@ -3,15 +3,15 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ModelLibrary
 {
-    public class Serie
-    {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int ID_Serie;
-        [Required, StringLength(30)]
-        public string Nome { get; set; }
-        [Required]
-        public int status { get; set; }
+	public class Serie
+	{
+		[Key]
+		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+		public int ID_Serie;
+		[Required, StringLength(30)]
+		public string Nome { get; set; }
+		[Required, StringLength(30)]
+		public string status { get; set; }
 		[Required]
 		public int Tot_Ep { get; set; }
 		[Required]

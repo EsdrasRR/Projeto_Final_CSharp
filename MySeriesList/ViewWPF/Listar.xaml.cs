@@ -14,9 +14,6 @@ using System.Windows.Shapes;
 
 namespace ViewWPF
 {
-	/// <summary>
-	/// Interaction logic for Listar.xaml
-	/// </summary>
 	public partial class Listar : Window
 	{
 		public Listar()

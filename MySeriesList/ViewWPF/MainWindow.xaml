@@ -14,10 +14,9 @@
             <ColumnDefinition Width="63*"/>
         </Grid.ColumnDefinitions>
 
-        <Button Content="Cadastrar" Margin="73,-120,28,270" Click="Button_Click" RenderTransformOrigin="-0.565,-0.01" Height="111" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="217" IsDefault="True" FontSize="20"/>
-        <Button Content="Listar" Margin="75,0,26,81" Click="Button_Click" RenderTransformOrigin="-0.565,-0.01" Height="111" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="217" IsDefault="True" FontSize="20"/>
-        <Button Content="Editar" Margin="50,-120,-204,270" Click="Button_Click" RenderTransformOrigin="-0.565,-0.01" Height="111" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="217" IsDefault="True" FontSize="20" Grid.Column="2"/>
-        <Button Content="Excluir" Margin="48,0,-202,75" Click="Button_Click" RenderTransformOrigin="-0.565,-0.01" Height="111" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="217" IsDefault="True" FontSize="20" Grid.Column="2"/>
-
+        <Button Content="Cadastrar" Margin="73,-120,28,270" Click="ButtonCadastrar_Click" RenderTransformOrigin="-0.565,-0.01" Height="111" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="217" IsDefault="True" FontSize="20"/>
+        <Button Content="Listar" Margin="75,0,26,81" Click="ButtonListar_Click" RenderTransformOrigin="-0.565,-0.01" Height="111" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="217" IsDefault="True" FontSize="20"/>
+        <Button Content="Editar" Margin="50,-120,-204,270" Click="ButtonEditar_Click" RenderTransformOrigin="-0.565,-0.01" Height="111" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="217" IsDefault="True" FontSize="20" Grid.Column="2"/>
+        <Button Content="Excluir" Margin="48,0,-202,75" Click="ButtonExcluir_Click" RenderTransformOrigin="-0.565,-0.01" Height="111" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="217" IsDefault="True" FontSize="20" Grid.Column="2"/>
     </Grid>
 </Window>

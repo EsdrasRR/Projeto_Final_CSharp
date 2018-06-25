@@ -26,11 +26,11 @@
         <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="183,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
         <StackPanel Margin="-3,11,0,-11" Grid.ColumnSpan="2">
             <ComboBox x:Name="txtStatus" HorizontalAlignment="Left" Height="23" Margin="243,97,0,0" VerticalAlignment="Top" Width="120">
-                <ComboBoxItem Tag="01" Content="Assistindo"/>
-                <ComboBoxItem Tag="02" Content="Completado"/>
-                <ComboBoxItem Tag="03" IsSelected="True" Content="Planejo Assistir"/>
-                <ComboBoxItem Tag="04" Content="Dropado"/>
-                <ComboBoxItem Tag="05" Content="Em espera"/>
+                <ComboBoxItem Content="Assistindo"/>
+                <ComboBoxItem Content="Completado"/>
+                <ComboBoxItem IsSelected="True" Content="Planejo Assistir"/>
+                <ComboBoxItem Content="Dropado"/>
+                <ComboBoxItem Content="Em espera"/>
             </ComboBox>
         </StackPanel>
         <TextBox x:Name="txtTot_Ep" HorizontalAlignment="Left" Height="23" Margin="184,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
@@ -39,7 +39,7 @@
         <TextBox x:Name="txtGenero2" HorizontalAlignment="Left" Height="23" Margin="184,307,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1" />
         <TextBox x:Name="txtGenero3" HorizontalAlignment="Left" Height="23" Margin="184,353,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1" />
         <ComboBox x:Name="txtNota" HorizontalAlignment="Left" Height="23" Margin="184,398,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1">
-            <ComboBoxItem IsSelected="True" />
+            <ComboBoxItem IsSelected="True" Content="00"/>
             <ComboBoxItem Tag="01" Content="01"/>
             <ComboBoxItem Tag="02" Content="02"/>
             <ComboBoxItem Tag="03" Content="03"/>

@@ -1,24 +1,36 @@
-﻿using ControllerLibrary;
-using ModelLibrary;
-using System.Windows;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Windows;
 
 namespace ViewWPF
 {
-    public partial class MainWindow : Window
+	public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
         }
 
-		private void Button_Click(object sender, RoutedEventArgs e)
+		private void ButtonCadastrar_Click(object sender, RoutedEventArgs e)
 		{
 			Cadastrar cadastrar = new Cadastrar();
 			cadastrar.Show();
+			this.Close();
+		}
+		private void ButtonListar_Click(object sender, RoutedEventArgs e)
+		{
+			Listar listar = new Listar();
+			listar.Show();
+			this.Close();
+		}
+		private void ButtonEditar_Click(object sender, RoutedEventArgs e)
+		{
+			Editar editar = new Editar();
+			editar.Show();
+			this.Close();
+		}
+		private void ButtonExcluir_Click(object sender, RoutedEventArgs e)
+		{
+			Excluir excluir = new Excluir();
+			excluir.Show();
 			this.Close();
 		}
 	}
