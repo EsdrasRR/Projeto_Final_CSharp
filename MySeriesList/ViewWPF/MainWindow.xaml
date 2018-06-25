@@ -5,11 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ViewWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="500">
-    
-    <Grid Margin="-11,217,490,-9">
+        Title="MainWindow" Height="500" Width="900">
 
-        <Button Content="Cadastrar" Margin="144,-148,-240,167" Click="Button_Click" RenderTransformOrigin="-0.565,-0.01" Height="92" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="109" IsDefault="True" FontSize="20"/>
+    <Grid Margin="-11,217,490,-9">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="319*"/>
+            <ColumnDefinition Width="32*"/>
+            <ColumnDefinition Width="63*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button Content="Cadastrar" Margin="78,-158,23,308" Click="Button_Click" RenderTransformOrigin="-0.565,-0.01" Height="111" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="217" IsDefault="True" FontSize="20"/>
 
 
     </Grid>

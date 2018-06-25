@@ -15,46 +15,47 @@ using System.Windows.Shapes;
 
 namespace ViewWPF
 {
-    /// <summary>
-    /// Interação lógica para Cadastrar.xam
-    /// </summary>
-    public partial class Cadastrar : Page
-    {
-        public Cadastrar()
-        {
-            InitializeComponent();
-        }
-        private void btnSalvar_Click(object sender, RoutedEventArgs e)
-        {
-             try
-             {
-                Serie serie = new Serie();
+	public partial class Cadastrar : Window
+	{
+		public Cadastrar()
+		{
+			InitializeComponent();
+		}
 
-                serie.Nome = txtNome.Text;
-                serie.status = txtLogin.Text;
-                serie.Tot_Ep = txtEmail.Text;
-                serie.Ep_Atual = txtSenha.Text;
-                serie.Genero1 =
-                serie.Genero2 =
-                serie.Genero2 =
-                serie.Nota = 
-                serie.Observacao = 
+		private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+		{
 
-                SerieController serieController = new SerieController();
-                serieController.Adicionar(serie);
+		}
+		private void btnCadastrar_Click(object sender, RoutedEventArgs e)
+		{
+		try
+		{
+		Serie serie = new Serie();
 
-                MessageBox.Show("Série salva com exito!");
-             }
-             catch (Exception ex)
-             {
-                MessageBox.Show("Erro ao salvar o série (" + ex.Message + ")");
-                
-             }
-        }
+		serie.Nome = txtNome.Text;
+		serie.status = int.Parse(txtStatus.SelectedValue.ToString());
+		serie.Tot_Ep = int.Parse(txtTot_Ep.Text);
+		serie.Ep_Atual= int.Parse(txtEp_Atual.Text);
+		serie.Genero1 = txtGenero1.Text;
+		serie.Genero2 = txtGenero2.Text;
+		serie.Genero2 = txtGenero3.Text;
+		serie.Nota = int.Parse(txtNota.SelectedValue.ToString());
 
-        private void CheckBox_Checked(object sender, RoutedEventArgs e)
-        {
+		SerieController serieController = new SerieController();
+		serieController.Adicionar(serie);
 
-        }
-    }
+		MessageBox.Show("Série salva com exito!");
+	}
+	catch (Exception ex)
+	{
+		MessageBox.Show("Erro ao salvar o série (" + ex.Message + ")");
+
+	}
+}
+
+private void CheckBox_Checked(object sender, RoutedEventArgs e)
+{
+
+}*/
+	}
 }
