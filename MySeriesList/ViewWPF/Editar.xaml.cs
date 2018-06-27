@@ -1,23 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using ControllerLibrary;
+﻿using ControllerLibrary;
 using ModelLibrary;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace ViewWPF
 {
-    /// <summary>
-    /// Interaction logic for Editar.xaml
-    /// </summary>
+
     public partial class Editar : Window
     {
         private Serie _ser;
@@ -39,10 +26,15 @@ namespace ViewWPF
 
         public void pegarSer(Serie _ser)
         {
+
             txtNome.Text = _ser.Nome;
-            txtStatus.Text = _ser.Login;
-            txtEmail.Text = _ser.Email;
-            txtSenha.Text = _ser.Senha;
+            txtStatus.Text = _ser.Status;
+            txtTot_Ep.Text = _ser.Tot_Ep;
+            txtEp_Atual.Text = _ser.Ep_Atual;
+            txtGenero1.Text = _ser.Genero1;
+            txtGenero2.Text = _ser.Genero2;
+            txtGenero3.Text = _ser.Genero3;
+            txtNota.Text = _ser.Nota;
 
         }
 
@@ -51,9 +43,14 @@ namespace ViewWPF
 
              SerieController serieController = new SerieController();
             _ser.Nome = txtNome.Text;
-            _ser.Login = txtLogin.Text;
-            _ser.Email = txtEmail.Text;
-            _ser.Senha = txtSenha.Text;
+            _ser.Status = txtStatus.Text;
+            _ser.Tot_Ep = txtTot_Ep.Text;
+            _ser.Ep_Atual = txtEp_Atual.Text;
+            _ser.Genero1 = txtGenero1.Text;
+            _ser.Genero2 = txtGenero2.Text;
+            _ser.Genero3 = txtGenero3.Text;
+            _ser.Nota = txtNota.Text;
+
             serieController.Atualizar(_ser);
 
             MessageBox.Show("Usuario editado com exito!");

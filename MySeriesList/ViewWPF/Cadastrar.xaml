@@ -7,10 +7,6 @@
         Title="Cadastrar" Height="500" Width="900">
 
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="57*"/>
-            <ColumnDefinition Width="835*"/>
-        </Grid.ColumnDefinitions>
 
         <Button Content="Voltar&#xD;&#xA;" HorizontalAlignment="Left" Margin="382,380,0,0" VerticalAlignment="Top" Width="66" Click="btnVoltar_Click" RenderTransformOrigin="0.499,0.865" Height="22" Grid.Column="1"/>
         <Button x:Name="btnCadastrar" Content="Cadastrar&#xD;&#xA;" HorizontalAlignment="Left" Margin="463,380,0,0" VerticalAlignment="Top" Width="66" Click="btnSalvar_Click" RenderTransformOrigin="0.499,0.865" Height="22" Grid.Column="1"/>

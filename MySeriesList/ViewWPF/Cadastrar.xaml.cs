@@ -25,14 +25,14 @@ namespace ViewWPF
 
 		serie.Nome = txtNome.Text;
 		serie.Status = txtStatus.Text;
-		serie.Tot_Ep = int.Parse(txtTot_Ep.Text);
-		serie.Ep_Atual= int.Parse(txtEp_Atual.Text);
+		serie.Tot_Ep = txtTot_Ep.Text;
+        serie.Ep_Atual = txtEp_Atual.Text;
 		serie.Genero1 = txtGenero1.Text;
 		serie.Genero2 = txtGenero2.Text;
 		serie.Genero2 = txtGenero3.Text;
-		serie.Nota = int.Parse(txtNota.Text);
+		serie.Nota = txtNota.Text;
 
-                SerieController serieController = new SerieController();
+        SerieController serieController = new SerieController();
 		serieController.Adicionar(serie);
 
 		MessageBox.Show("Série salva com exito!");

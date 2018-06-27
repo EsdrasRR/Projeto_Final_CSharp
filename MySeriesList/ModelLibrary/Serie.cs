@@ -13,9 +13,9 @@ namespace ModelLibrary
 		[Required, StringLength(30)]
 		public string Status { get; set; }
 		[Required]
-		public int Tot_Ep { get; set; }
+		public string Tot_Ep { get; set; }
 		[Required]
-		public int Ep_Atual { get; set; }
+		public string Ep_Atual { get; set; }
         [Required, StringLength(30)]
         public string Genero1 { get; set; }
         [Required, StringLength(30)]
@@ -23,7 +23,7 @@ namespace ModelLibrary
         [Required, StringLength(30)]
         public string Genero3 { get; set; }
 		[Required]
-		public int Nota { get; set; }
+		public string Nota { get; set; }
 
     }
 }

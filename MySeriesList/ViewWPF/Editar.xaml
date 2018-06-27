@@ -7,18 +7,26 @@
         mc:Ignorable="d"
         Title="Editar" Height="500" Width="900">
 
-    <Grid RenderTransformOrigin="0.441,0.312">
-        <Button x:Name="btnAtualizar" Content="Atualizar" HorizontalAlignment="Left" Margin="601,191,0,0" VerticalAlignment="Top" Width="75" Click="btnAtualizar_Click"/>
+    <Grid>
 
-        <Label Content="Status" HorizontalAlignment="Left" Margin="129,97,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.143" FontSize="16" Height="30"/>
-        <Label Content="Nome&#xA;" HorizontalAlignment="Left" Margin="129,53,0,0" VerticalAlignment="Top" FontSize="16" Height="30" RenderTransformOrigin="0.547,0.567"/>
-        <Label Content="Ep Atual" HorizontalAlignment="Left" Margin="129,144,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.143" FontSize="16" Height="30"/>
-        <Label Content="Senha&#xA;" HorizontalAlignment="Left" Margin="131,184,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.143" FontSize="16" Height="30"/>
-        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="253,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
-        <TextBox x:Name="txtLogin" HorizontalAlignment="Left" Height="23" Margin="253,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
-        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="253,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
-        <TextBox x:Name="txtSenha" HorizontalAlignment="Left" Height="23" Margin="253,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
-        <TextBox x:Name="txtSenha_Copy" HorizontalAlignment="Left" Height="23" Margin="253,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
-        <TextBox x:Name="txtSenha_Copy1" HorizontalAlignment="Left" Height="23" Margin="253,287,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <Button Content="Voltar&#xD;&#xA;" HorizontalAlignment="Left" Margin="382,380,0,0" VerticalAlignment="Top" Width="66" Click="btnVoltar_Click" RenderTransformOrigin="0.499,0.865" Height="22" Grid.Column="1"/>
+        <Button x:Name="btnAtualizar" Content="Atualizar&#xD;&#xA;" HorizontalAlignment="Left" Margin="463,380,0,0" VerticalAlignment="Top" Width="66" Click="btnAtualizar_Click" RenderTransformOrigin="0.499,0.865" Height="22" Grid.Column="1"/>
+        <Label Content="Status&#xD;&#xA;" HorizontalAlignment="Left" Margin="72,104,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.143" FontSize="16" Height="30" Grid.Column="1"/>
+        <Label Content="Nome&#xA;" HorizontalAlignment="Left" Margin="72,53,0,0" VerticalAlignment="Top" FontSize="16" Height="30" RenderTransformOrigin="0.547,0.567" Grid.Column="1"/>
+        <Label Content="Tot_Ep&#xA;" HorizontalAlignment="Left" Margin="72,150,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.143" FontSize="16" Height="30" Grid.Column="1"/>
+        <Label Content="EpAtual&#xA;" HorizontalAlignment="Left" Margin="72,203,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.143" FontSize="16" Height="30" Grid.Column="1"/>
+        <Label Content="Genero 1&#xA;" HorizontalAlignment="Left" Margin="71,252,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.143" FontSize="16" Height="34" Width="75" Grid.Column="1"/>
+        <Label Content="Genero 2&#xA;" HorizontalAlignment="Left" Margin="71,301,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.143" FontSize="16" Height="34" Width="75" Grid.Column="1"/>
+        <Label Content="Genero 3&#xA;" HorizontalAlignment="Left" Margin="71,347,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.143" FontSize="16" Height="34" Width="75" Grid.Column="1"/>
+        <Label Content="Nota&#xA;" HorizontalAlignment="Left" Margin="73,391,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.143" FontSize="16" Height="34" Width="75" Grid.Column="1"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="183,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="txtStatus" HorizontalAlignment="Left" Height="23" Margin="183,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="txtTot_Ep" HorizontalAlignment="Left" Height="23" Margin="183,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="txtEp_Atual" HorizontalAlignment="Left" Height="23" Margin="183,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1" />
+        <TextBox x:Name="txtGenero1" HorizontalAlignment="Left" Height="23" Margin="183,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1" RenderTransformOrigin="0.296,-0.47" />
+        <TextBox x:Name="txtGenero2" HorizontalAlignment="Left" Height="23" Margin="183,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1" RenderTransformOrigin="-0.466,-0.203" />
+        <TextBox x:Name="txtGenero3" HorizontalAlignment="Left" Height="23" Margin="183,350,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1" />
+        <TextBox x:Name="txtNota" HorizontalAlignment="Left" Height="23" Margin="183,395,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
     </Grid>
+    
 </Window>
