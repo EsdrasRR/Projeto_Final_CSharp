@@ -6,7 +6,17 @@
         xmlns:local="clr-namespace:ViewWPF"
         mc:Ignorable="d"
         Title="Listar" Height="500" Width="900">
-    <Grid>
-        
+    <Grid Margin="0,0,0,-1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="680*"/>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="55*"/>
+            <ColumnDefinition Width="26*"/>
+            <ColumnDefinition Width="24*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="dgSeries" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" 
+                  CanUserAddRows="False" 
+                  CanUserDeleteRows="False" Height="460" Width="882" SelectionChanged="dgClientes_SelectionChanged" Grid.ColumnSpan="5"/>
+
     </Grid>
 </Window>
