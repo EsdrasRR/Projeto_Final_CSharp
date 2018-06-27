@@ -1,21 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using ControllerLibrary;
 using ModelLibrary;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace ViewWPF
 {
-	public partial class Cadastrar : Window
+    public partial class Cadastrar : Window
 	{
 		public Cadastrar()
 		{
@@ -33,15 +24,15 @@ namespace ViewWPF
 		Serie serie = new Serie();
 
 		serie.Nome = txtNome.Text;
-		serie.status = txtStatus.SelectedValue.ToString();
+		serie.Status = txtStatus.Text;
 		serie.Tot_Ep = int.Parse(txtTot_Ep.Text);
 		serie.Ep_Atual= int.Parse(txtEp_Atual.Text);
 		serie.Genero1 = txtGenero1.Text;
 		serie.Genero2 = txtGenero2.Text;
 		serie.Genero2 = txtGenero3.Text;
-		serie.Nota = int.Parse(txtNota.SelectedValue.ToString());
+		serie.Nota = int.Parse(txtNota.Text);
 
-		SerieController serieController = new SerieController();
+                SerieController serieController = new SerieController();
 		serieController.Adicionar(serie);
 
 		MessageBox.Show("Série salva com exito!");

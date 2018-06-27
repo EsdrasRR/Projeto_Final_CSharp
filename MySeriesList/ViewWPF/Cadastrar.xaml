@@ -3,7 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ViewWPF"
         mc:Ignorable="d"
         Title="Cadastrar" Height="500" Width="900">
 
@@ -24,33 +23,13 @@
         <Label Content="Genero 3&#xA;" HorizontalAlignment="Left" Margin="71,347,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.143" FontSize="16" Height="34" Width="75" Grid.Column="1"/>
         <Label Content="Nota&#xA;" HorizontalAlignment="Left" Margin="73,391,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.143" FontSize="16" Height="34" Width="75" Grid.Column="1"/>
         <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="183,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
-        <StackPanel Margin="-3,11,0,-11" Grid.ColumnSpan="2">
-            <ComboBox x:Name="txtStatus" HorizontalAlignment="Left" Height="23" Margin="243,97,0,0" VerticalAlignment="Top" Width="120">
-                <ComboBoxItem Content="Assistindo"/>
-                <ComboBoxItem Content="Completado"/>
-                <ComboBoxItem IsSelected="True" Content="Planejo Assistir"/>
-                <ComboBoxItem Content="Dropado"/>
-                <ComboBoxItem Content="Em espera"/>
-            </ComboBox>
-        </StackPanel>
-        <TextBox x:Name="txtTot_Ep" HorizontalAlignment="Left" Height="23" Margin="184,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
-        <TextBox x:Name="txtEp_Atual" HorizontalAlignment="Left" Height="23" Margin="184,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1" />
-        <TextBox x:Name="txtGenero1" HorizontalAlignment="Left" Height="23" Margin="184,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1" />
-        <TextBox x:Name="txtGenero2" HorizontalAlignment="Left" Height="23" Margin="184,307,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1" />
-        <TextBox x:Name="txtGenero3" HorizontalAlignment="Left" Height="23" Margin="184,353,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1" />
-        <ComboBox x:Name="txtNota" HorizontalAlignment="Left" Height="23" Margin="184,398,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1">
-            <ComboBoxItem IsSelected="True" Content="00"/>
-            <ComboBoxItem Tag="01" Content="01"/>
-            <ComboBoxItem Tag="02" Content="02"/>
-            <ComboBoxItem Tag="03" Content="03"/>
-            <ComboBoxItem Tag="04" Content="04"/>
-            <ComboBoxItem Tag="05" Content="05"/>
-            <ComboBoxItem Tag="06" Content="06"/>
-            <ComboBoxItem Tag="07" Content="07"/>
-            <ComboBoxItem Tag="08" Content="08"/>
-            <ComboBoxItem Tag="09" Content="09"/>
-            <ComboBoxItem Tag="10" Content="10"/>
-        </ComboBox>
+        <TextBox x:Name="txtStatus" HorizontalAlignment="Left" Height="23" Margin="183,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="txtTot_Ep" HorizontalAlignment="Left" Height="23" Margin="183,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="txtEp_Atual" HorizontalAlignment="Left" Height="23" Margin="183,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1" />
+        <TextBox x:Name="txtGenero1" HorizontalAlignment="Left" Height="23" Margin="183,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1" RenderTransformOrigin="0.296,-0.47" />
+        <TextBox x:Name="txtGenero2" HorizontalAlignment="Left" Height="23" Margin="183,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1" RenderTransformOrigin="-0.466,-0.203" />
+        <TextBox x:Name="txtGenero3" HorizontalAlignment="Left" Height="23" Margin="183,350,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1" />
+        <TextBox x:Name="txtNota" HorizontalAlignment="Left" Height="23" Margin="183,395,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
     </Grid>
 
 </Window>

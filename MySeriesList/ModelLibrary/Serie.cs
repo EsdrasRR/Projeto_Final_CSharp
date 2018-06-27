@@ -11,7 +11,7 @@ namespace ModelLibrary
 		[Required, StringLength(30)]
 		public string Nome { get; set; }
 		[Required, StringLength(30)]
-		public string status { get; set; }
+		public string Status { get; set; }
 		[Required]
 		public int Tot_Ep { get; set; }
 		[Required]
