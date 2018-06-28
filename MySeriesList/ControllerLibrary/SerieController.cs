@@ -11,11 +11,12 @@ namespace ControllerLibrary
 
         private List<Serie> listSeries { get; set; }
 
-        public void Adicionar(Serie entity)
-        {
-            contexto.Series.Add(entity);
-            contexto.SaveChanges();        
-        }
+		public void Adicionar(Serie entity)
+		{
+
+			contexto.Series.Add(entity);
+			contexto.SaveChanges();
+		}
 
         public void Atualizar(Serie entity)
         {

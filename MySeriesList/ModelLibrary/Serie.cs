@@ -7,7 +7,7 @@ namespace ModelLibrary
 	{
 		[Key]
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-		public int ID_Serie;
+		public int ID_Serie { get; set; }
 		[Required, StringLength(30)]
 		public string Nome { get; set; }
 		[Required, StringLength(30)]
