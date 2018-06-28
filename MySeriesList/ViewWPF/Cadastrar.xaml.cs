@@ -29,7 +29,7 @@ namespace ViewWPF
         serie.Ep_Atual = txtEp_Atual.Text;
 		serie.Genero1 = txtGenero1.Text;
 		serie.Genero2 = txtGenero2.Text;
-		serie.Genero2 = txtGenero3.Text;
+		serie.Genero3 = txtGenero3.Text;
 		serie.Nota = txtNota.Text;
 
         SerieController serieController = new SerieController();
