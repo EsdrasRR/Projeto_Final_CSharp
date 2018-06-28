@@ -1,11 +1,11 @@
 ﻿using ModelLibrary;
 using System.Collections.Generic;
 using System.Linq;
-
+using System;
 
 namespace ControllerLibrary
 {
-    public class SerieController : ISerieController<Serie>
+	public class SerieController: ISerieController<Serie>
     {
         private Contexto contexto = new Contexto();
 
@@ -13,12 +13,11 @@ namespace ControllerLibrary
 
 		public void Adicionar(Serie entity)
 		{
-
 			contexto.Series.Add(entity);
 			contexto.SaveChanges();
 		}
-
-        public void Atualizar(Serie entity)
+	
+		public void Atualizar(Serie entity)
         {
             contexto.Entry(entity).State = System.Data.Entity.EntityState.Modified;
             contexto.SaveChanges();
@@ -48,5 +47,11 @@ namespace ControllerLibrary
         {
             return contexto.Series.ToList();
         }
-    }
+
+		void ISerieController<Serie>.Adicionar(Serie entity)
+		{
+			throw new NotImplementedException();
+		}
+	}
 }
+

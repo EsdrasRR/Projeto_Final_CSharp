@@ -16,7 +16,8 @@
         </Grid.ColumnDefinitions>
         <DataGrid x:Name="dgSeries" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" 
                   CanUserAddRows="False" 
-                  CanUserDeleteRows="False" Height="460" Width="882" SelectionChanged="dgSeries_SelectionChanged" Grid.ColumnSpan="5"/>
+                  CanUserDeleteRows="False" Height="385" Width="882" SelectionChanged="dgSeries_SelectionChanged" Grid.ColumnSpan="5"/>
+        <Button Content="Voltar&#xA;" HorizontalAlignment="Left" Margin="374,420,0,0" VerticalAlignment="Top" Width="66" Click="btnVoltar_Click" RenderTransformOrigin="0.499,0.865" Height="22"/>
 
     </Grid>
 </Window>

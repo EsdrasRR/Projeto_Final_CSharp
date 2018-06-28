@@ -34,11 +34,12 @@ namespace ViewWPF
 
         SerieController serieController = new SerieController();
 		serieController.Adicionar(serie);
+				
 
 		MessageBox.Show("Série salva com exito!");
 	}
 	catch (Exception ex)
-	{
+	{ 
 		MessageBox.Show("Erro ao salvar a série (" + ex.Message + ")");
 
 	}

@@ -9,7 +9,8 @@
     <Grid>
         <DataGrid x:Name="dgExSerie" HorizontalAlignment="Left" VerticalAlignment="Top" 
                   CanUserAddRows="False" 
-                  CanUserDeleteRows="False" Height="469" Width="892"    SelectionChanged="dgExSerie_SelectionChanged"/>
+                  CanUserDeleteRows="False" Height="410" Width="892"    SelectionChanged="dgExSerie_SelectionChanged"/>
+        <Button Content="Voltar&#xA;" HorizontalAlignment="Left" Margin="380,428,0,0" VerticalAlignment="Top" Width="66" Click="btnVoltar_Click" RenderTransformOrigin="0.499,0.865" Height="22"/>
 
     </Grid>
 </Window>
