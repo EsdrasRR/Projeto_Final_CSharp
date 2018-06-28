@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ViewWPF"
         mc:Ignorable="d"
-        Title="ListaExcluir" Height="500" Width="900" Loaded="Window_Loaded">
+        Title="ListaExcluir" Height="500" Width="900" Loaded="Windows_Loaded">
     <Grid>
         <DataGrid x:Name="dgExSerie" HorizontalAlignment="Left" VerticalAlignment="Top" 
                   CanUserAddRows="False" 

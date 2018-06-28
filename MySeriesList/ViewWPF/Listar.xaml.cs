@@ -12,7 +12,7 @@ namespace ViewWPF
 			InitializeComponent();
 		}
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        private void Windows_Loaded(object sender, RoutedEventArgs e)
         {
 
             SerieController serieController = new SerieController();
