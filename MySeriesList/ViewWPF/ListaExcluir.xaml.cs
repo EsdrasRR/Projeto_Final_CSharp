@@ -1,6 +1,4 @@
-﻿using System;
-using System;
-using ControllerLibrary;
+﻿using ControllerLibrary;
 using ModelLibrary;
 using System.Windows;
 using System.Windows.Controls;

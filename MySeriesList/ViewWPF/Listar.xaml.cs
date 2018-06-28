@@ -1,12 +1,11 @@
-﻿using System;
-using ControllerLibrary;
+﻿using ControllerLibrary;
 using ModelLibrary;
 using System.Windows;
 using System.Windows.Controls;
 
 namespace ViewWPF
 {
-	public partial class Listar : Window
+    public partial class Listar : Window
 	{
 		public Listar()
 		{
@@ -36,6 +35,12 @@ namespace ViewWPF
 
 
 
+        }
+        private void btnVoltar_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow main = new MainWindow();
+            main.Show();
+            this.Close();
         }
     }
 }

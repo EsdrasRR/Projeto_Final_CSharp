@@ -16,6 +16,10 @@ namespace ViewWPF
             pegarSer(_ser);
         }
 
+        public Editar()
+        {
+        }
+
         private void BuscarId_Click(object sender, RoutedEventArgs e)
         {
 
@@ -58,6 +62,12 @@ namespace ViewWPF
             this.Close();
 
 
+        }
+        private void btnVoltar_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow main = new MainWindow();
+            main.Show();
+            this.Close();
         }
     }
 }
