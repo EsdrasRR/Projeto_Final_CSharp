@@ -76,6 +76,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ListaExcluir.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Listar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -96,6 +100,9 @@
     </Compile>
     <Compile Include="Excluir.xaml.cs">
       <DependentUpon>Excluir.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListaExcluir.xaml.cs">
+      <DependentUpon>ListaExcluir.xaml</DependentUpon>
     </Compile>
     <Compile Include="Listar.xaml.cs">
       <DependentUpon>Listar.xaml</DependentUpon>
