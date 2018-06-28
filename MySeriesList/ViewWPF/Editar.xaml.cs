@@ -18,6 +18,7 @@ namespace ViewWPF
 
         public Editar()
         {
+            InitializeComponent();
         }
 
         private void BuscarId_Click(object sender, RoutedEventArgs e)
