@@ -21,17 +21,5 @@ namespace ViewWPF
 			listar.Show();
 			this.Close();
 		}
-		private void ButtonEditar_Click(object sender, RoutedEventArgs e)
-		{
-			Editar editar = new Editar();
-			editar.Show();
-			this.Close();
-		}
-		private void ButtonExcluir_Click(object sender, RoutedEventArgs e)
-		{
-			ListaExcluir listaexcluir = new ListaExcluir();
-			listaexcluir.Show();
-			this.Close();
-		}
 	}
 }
