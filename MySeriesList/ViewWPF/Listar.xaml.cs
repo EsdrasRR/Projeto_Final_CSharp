@@ -28,21 +28,18 @@ namespace ViewWPF
 
             Editar editar = new Editar(ser);
 
+
             editar.Show();
 
             this.Close();
+
+
 
         }
         private void btnVoltar_Click(object sender, RoutedEventArgs e)
         {
             MainWindow main = new MainWindow();
             main.Show();
-            this.Close();
-        }
-        private void btnExcluir_Click(object sender, RoutedEventArgs e)
-        {
-            ListaExcluir excluir = new ListaExcluir();
-            excluir.Show();
             this.Close();
         }
         private void btnEditar_Click(object sender, RoutedEventArgs e)

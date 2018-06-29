@@ -21,5 +21,11 @@ namespace ViewWPF
 			listar.Show();
 			this.Close();
 		}
-	}
+        private void btnExcluir_Click(object sender, RoutedEventArgs e)
+        {
+            ListaExcluir excluir = new ListaExcluir();
+            excluir.Show();
+            this.Close();
+        }
+    }
 }

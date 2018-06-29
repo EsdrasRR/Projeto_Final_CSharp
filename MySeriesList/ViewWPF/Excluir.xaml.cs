@@ -33,6 +33,8 @@ namespace ViewWPF
 
             MessageBox.Show("Usuario excluido com exito!");
 
+            MainWindow main = new MainWindow();
+            main.Show();
             this.Close();
 
         }

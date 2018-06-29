@@ -13,8 +13,8 @@
             <ColumnDefinition Width="32*"/>
             <ColumnDefinition Width="63*"/>
         </Grid.ColumnDefinitions>
-
-        <Button Content="Cadastrar" Margin="172,0,289,176" Click="ButtonCadastrar_Click" RenderTransformOrigin="-0.565,-0.01" Height="111" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="218" IsDefault="True" FontSize="20"/>
-        <Button Content="Listar" Margin="520,0,10,176" Click="ButtonListar_Click" RenderTransformOrigin="-0.565,-0.01" Height="111" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="217" IsDefault="True" FontSize="20" Grid.ColumnSpan="2"/>
+        <Button Content="Excluir" Margin="326,0,135,32" Click="btnExcluir_Click" RenderTransformOrigin="-0.565,-0.01" Height="111" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="218" IsDefault="True" FontSize="20"/>
+        <Button Content="Cadastrar" Margin="326,0,135,326" Click="ButtonCadastrar_Click" RenderTransformOrigin="-0.565,-0.01" Height="111" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="218" IsDefault="True" FontSize="20"/>
+        <Button Content="Listar" Margin="326,0,135,180" Click="ButtonListar_Click" RenderTransformOrigin="-0.565,-0.01" Height="111" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="218" IsDefault="True" FontSize="20"/>
     </Grid>
 </Window>
