@@ -7,14 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="500" Width="900">
 
-    <Grid Margin="-11,217,490,-9">
+    <Grid Margin="-11,21,22,-9">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="319*"/>
             <ColumnDefinition Width="32*"/>
             <ColumnDefinition Width="63*"/>
         </Grid.ColumnDefinitions>
 
-        <Button Content="Cadastrar" Margin="73,-120,28,270" Click="ButtonCadastrar_Click" RenderTransformOrigin="-0.565,-0.01" Height="111" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="217" IsDefault="True" FontSize="20"/>
-        <Button Content="Listar" Margin="75,0,26,81" Click="ButtonListar_Click" RenderTransformOrigin="-0.565,-0.01" Height="111" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="217" IsDefault="True" FontSize="20"/>
+        <Button Content="Cadastrar" Margin="172,0,289,176" Click="ButtonCadastrar_Click" RenderTransformOrigin="-0.565,-0.01" Height="111" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="218" IsDefault="True" FontSize="20"/>
+        <Button Content="Listar" Margin="520,0,10,176" Click="ButtonListar_Click" RenderTransformOrigin="-0.565,-0.01" Height="111" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="217" IsDefault="True" FontSize="20" Grid.ColumnSpan="2"/>
     </Grid>
 </Window>

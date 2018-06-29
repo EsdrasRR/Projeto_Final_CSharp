@@ -60,8 +60,9 @@ namespace ViewWPF
 
             MessageBox.Show("Usuario editado com exito!");
 
+            MainWindow main = new MainWindow();
+            main.Show();
             this.Close();
-
 
         }
         private void btnVoltar_Click(object sender, RoutedEventArgs e)
